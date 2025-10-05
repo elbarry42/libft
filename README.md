@@ -1,4 +1,4 @@
-# Libft – Mon premier projet à 42 Lyon 🎓
+# Libft
 
 Bienvenue dans **libft** ! 🎉 Ce projet marque le début de mon aventure à l’École 42.
 L’objectif ? Recréer en C une **bibliothèque de fonctions usuelles**, pour apprendre à coder proprement, gérer la mémoire et comprendre en profondeur le fonctionnement des bases du langage.
