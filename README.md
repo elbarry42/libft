@@ -77,10 +77,10 @@ int main(void)
 
 ## 🚀 Objectifs pédagogiques
 
-Ce projet m’a permis de :
-✅ Approfondir ma maîtrise du langage **C**.
-✅ Comprendre la gestion fine de la **mémoire** et des **pointeurs**.
-✅ Utiliser les **Makefiles** pour automatiser la compilation.
+Ce projet m’a permis de : \n
+✅ Approfondir ma maîtrise du langage **C**. \n
+✅ Comprendre la gestion fine de la **mémoire** et des **pointeurs**. \n
+✅ Utiliser les **Makefiles** pour automatiser la compilation. \n
 ✅ Structurer un projet réutilisable dans tous mes futurs travaux.
 
 ---
