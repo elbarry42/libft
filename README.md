@@ -75,7 +75,7 @@ int main(void)
 
 ---
 
-🚀 Objectifs pédagogiques  
+## 🚀 Objectifs pédagogiques  
 Ce projet m’a permis de :  
 ✅ Approfondir ma maîtrise du langage C.  
 ✅ Comprendre la gestion fine de la mémoire et des pointeurs.  
