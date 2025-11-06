@@ -1,65 +1,61 @@
-# Libft
+# Libft – My First Project at 42 Lyon 🎓
 
-Bienvenue dans **libft** ! 🎉 Ce projet marque le début de mon aventure à l’École 42.
-L’objectif ? Recréer en C une **bibliothèque de fonctions usuelles**, pour apprendre à coder proprement, gérer la mémoire et comprendre en profondeur le fonctionnement des bases du langage.
-
----
-
-## 📝 Description du projet
-
-La **Libft** est une bibliothèque personnelle en C regroupant des fonctions standards (issues de la libc) ainsi que des fonctions supplémentaires.
-Elle servira de socle à la majorité des futurs projets à 42, permettant de gagner du temps tout en réutilisant un code propre et robuste.
+Welcome to **Libft!** 🎉 My very first project at **42 Lyon**, where I recreate a standard C library from scratch. 🔧
 
 ---
 
-## 📚 Fonctions principales
+## 📝 Project Description
 
-### 🔹 Partie 1 – Fonctions de la libc (recodage)
-
-* Gestion mémoire : `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memccpy`, `ft_memmove`, `ft_memchr`, `ft_memcmp`
-* Chaînes de caractères : `ft_strlen`, `ft_strdup`, `ft_strcpy`, `ft_strncpy`, `ft_strcat`, `ft_strncat`, `ft_strlcat`, `ft_strchr`, `ft_strrchr`, `ft_strstr`, `ft_strnstr`, `ft_strcmp`, `ft_strncmp`
-* Conversions : `ft_atoi`
-* Tests de caractères : `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`
-* Transformations : `ft_toupper`, `ft_tolower`
-
-### 🔹 Partie 2 – Fonctions supplémentaires
-
-* Allocation mémoire : `ft_memalloc`, `ft_memdel`
-* Chaînes de caractères dynamiques : `ft_strnew`, `ft_strdel`, `ft_strclr`
-* Fonctions d’itération : `ft_striter`, `ft_striteri`, `ft_strmap`, `ft_strmapi`
-* Comparaisons & manipulations : `ft_strequ`, `ft_strnequ`, `ft_strsub`, `ft_strjoin`, `ft_strtrim`, `ft_strsplit`
-* Conversion : `ft_itoa`
-* Affichage : `ft_putchar`, `ft_putstr`, `ft_putendl`, `ft_putnbr` (+ leurs versions avec file descriptor : `_fd`)
-
-### 🔹 Partie bonus (Listes chaînées)
-
-* Création & gestion de listes : `ft_lstnew`, `ft_lstdelone`, `ft_lstdel`, `ft_lstadd`, `ft_lstiter`, `ft_lstmap`
+**Libft** is a custom C library that gathers essential utility functions for strings, memory management, and data conversion — functions that will be reused throughout many future 42 projects.
 
 ---
 
-## 🛠️ Utilisation
+## 📚 Main Features
+
+### 🔹 Part 1 – Standard C Library Functions
+
+* **Memory management:** `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memccpy`, `ft_memmove`, `ft_memchr`, `ft_memcmp`
+* **String manipulation:** `ft_strlen`, `ft_strdup`, `ft_strcpy`, `ft_strncpy`, `ft_strcat`, `ft_strncat`, `ft_strlcat`, `ft_strchr`, `ft_strrchr`, `ft_strstr`, `ft_strnstr`, `ft_strcmp`, `ft_strncmp`
+* **Conversions:** `ft_atoi`
+* **Character tests:** `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`
+* **Character transformations:** `ft_toupper`, `ft_tolower`
+
+### 🔹 Part 2 – Additional Functions
+
+* **Dynamic memory:** `ft_memalloc`, `ft_memdel`
+* **Dynamic strings:** `ft_strnew`, `ft_strdel`, `ft_strclr`
+* **String iteration:** `ft_striter`, `ft_striteri`, `ft_strmap`, `ft_strmapi`
+* **Comparison & modification:** `ft_strequ`, `ft_strnequ`, `ft_strsub`, `ft_strjoin`, `ft_strtrim`, `ft_strsplit`
+* **Conversion:** `ft_itoa`
+* **Output:** `ft_putchar`, `ft_putstr`, `ft_putendl`, `ft_putnbr` (and their `_fd` versions)
+
+### 🔹 Bonus Part – Linked Lists
+
+* `ft_lstnew`, `ft_lstdelone`, `ft_lstdel`, `ft_lstadd`, `ft_lstiter`, `ft_lstmap`
+
+---
+
+## 🛠️ Usage
 
 ### Compilation
 
-La bibliothèque est générée sous forme de fichier **libft.a** grâce au Makefile.
-
-Commandes disponibles :
+The library is compiled into a **libft.a** file using the provided Makefile.
 
 ```bash
-# Compiler la bibliothèque
-make
+# Compile the library
+make  
 
-# Supprimer les fichiers objets
-make clean
+# Remove object files
+make clean  
 
-# Supprimer les fichiers objets + la librairie
-make fclean
+# Remove object files and the library
+make fclean  
 
-# Recompiler tout
-make re
+# Recompile everything
+make re  
 ```
 
-### Exemple d’utilisation
+### Example of Use
 
 ```c
 #include "libft.h"
@@ -68,34 +64,35 @@ int main(void)
 {
     char *str = "Hello, 42!";
     int len = ft_strlen(str);
-    printf("La longueur de la chaîne est : %d\n", len);
+    printf("String length is: %d\n", len);
     return (0);
 }
 ```
 
 ---
 
-## 🚀 Objectifs pédagogiques  
-Ce projet m’a permis de :  
-✅ Approfondir ma maîtrise du langage C.  
-✅ Comprendre la gestion fine de la mémoire et des pointeurs.  
-✅ Utiliser les Makefiles pour automatiser la compilation.  
-✅ Structurer un projet réutilisable dans tous mes futurs travaux.  
+## 🚀 Learning Goals
+
+This project helped me to:
+✅ Strengthen my understanding of the **C language**.
+✅ Master **pointers** and **memory management**.
+✅ Use **Makefiles** to automate compilation.
+✅ Build a **reusable and clean codebase** for future 42 projects.
 
 ---
 
 ## 🤝 Contribution
 
-Ce projet est développé dans le cadre de ma formation à 42 Lyon.
-Les suggestions d’amélioration sont toujours les bienvenues !
+This project is part of my journey at **42 Lyon**.
+Suggestions and discussions are always welcome! 😊
 
 ---
 
-## 🛡️ Licence
+## 🛡️ License
 
-Projet réalisé dans le cadre de l’École 42.
-Libre d’utilisation et de modification pour l’apprentissage.
+This project follows the **42 School license**.
+Free to use and modify for educational purposes.
 
 ---
 
-✨ Merci d’avoir consulté mon projet Libft ! 🚀
+✨ **Thank you for visiting my Libft project!** 🚀
