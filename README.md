@@ -83,8 +83,8 @@ int main(void)
 
 This project helped me to: <br>
 ✅ Strengthen my understanding of the **C language** <br>
-✅ Master **memory management** and **pointers**
-✅ Use **Makefiles** to automate builds
+✅ Master **memory management** and **pointers** <br>
+✅ Use **Makefiles** to automate builds <br>
 ✅ Build a **solid foundation** for all future 42 projects
 
 ---
