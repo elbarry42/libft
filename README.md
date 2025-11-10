@@ -81,8 +81,8 @@ int main(void)
 
 ## 🚀 Learning Goals
 
-This project helped me to:
-✅ Strengthen my understanding of the **C language**
+This project helped me to: <br>
+✅ Strengthen my understanding of the **C language** <br>
 ✅ Master **memory management** and **pointers**
 ✅ Use **Makefiles** to automate builds
 ✅ Build a **solid foundation** for all future 42 projects
