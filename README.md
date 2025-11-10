@@ -1,98 +1,103 @@
-# Libft – My First Project at 42 Lyon 🎓
+Libft – My First Project at 42 Lyon 🎓
 
-Welcome to **Libft!** 🎉 My very first project at **42 Lyon**, where I recreate a standard C library from scratch. 🔧
+Welcome to Libft! 🎉 My very first project at 42 Lyon, where I built my own C library from scratch. 🔧
 
----
+⸻
 
-## 📝 Project Description
+📝 Project Description
 
-**Libft** is a custom C library that gathers essential utility functions for strings, memory management, and data conversion — functions that will be reused throughout many future 42 projects.
+Libft is a personal C library that contains a collection of essential functions for handling strings, memory, and data conversions.
+It serves as a reusable foundation for future projects at 42, helping to save time and improve code reliability.
 
----
+⸻
 
-## 📚 Main Features
+📚 Main Features
 
-### 🔹 Part 1 – Standard C Library Functions
+🔹 Part 1 – Standard C Library Functions
 
-* **Memory management:** `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memccpy`, `ft_memmove`, `ft_memchr`, `ft_memcmp`
-* **String manipulation:** `ft_strlen`, `ft_strdup`, `ft_strcpy`, `ft_strncpy`, `ft_strcat`, `ft_strncat`, `ft_strlcat`, `ft_strchr`, `ft_strrchr`, `ft_strstr`, `ft_strnstr`, `ft_strcmp`, `ft_strncmp`
-* **Conversions:** `ft_atoi`
-* **Character tests:** `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`
-* **Character transformations:** `ft_toupper`, `ft_tolower`
+Re-implemented standard functions such as:
+ft_memset, ft_bzero, ft_memcpy, ft_memmove, ft_strlen, ft_strlcpy, ft_strlcat,
+ft_strchr, ft_strrchr, ft_strncmp, ft_memchr, ft_memcmp, ft_strnstr, ft_atoi,
+ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint, ft_toupper, ft_tolower,
+plus allocation functions: ft_calloc, ft_strdup.
 
-### 🔹 Part 2 – Additional Functions
+⸻
 
-* **Dynamic memory:** `ft_memalloc`, `ft_memdel`
-* **Dynamic strings:** `ft_strnew`, `ft_strdel`, `ft_strclr`
-* **String iteration:** `ft_striter`, `ft_striteri`, `ft_strmap`, `ft_strmapi`
-* **Comparison & modification:** `ft_strequ`, `ft_strnequ`, `ft_strsub`, `ft_strjoin`, `ft_strtrim`, `ft_strsplit`
-* **Conversion:** `ft_itoa`
-* **Output:** `ft_putchar`, `ft_putstr`, `ft_putendl`, `ft_putnbr` (and their `_fd` versions)
+🔹 Part 2 – Additional Functions
 
-### 🔹 Bonus Part – Linked Lists
+Extra utility functions not found in the standard C library:
+	•	ft_substr, ft_strjoin, ft_strtrim, ft_split, ft_itoa
+	•	ft_strmapi, ft_striteri
+	•	File descriptor output: ft_putchar_fd, ft_putstr_fd, ft_putendl_fd, ft_putnbr_fd
 
-* `ft_lstnew`, `ft_lstdelone`, `ft_lstdel`, `ft_lstadd`, `ft_lstiter`, `ft_lstmap`
+⸻
 
----
+🔹 Bonus Part – Linked Lists
 
-## 🛠️ Usage
+Once the mandatory part was complete, I implemented linked list utilities:
+ft_lstnew, ft_lstadd_front, ft_lstsize, ft_lstlast, ft_lstadd_back,
+ft_lstdelone, ft_lstclear, ft_lstiter, ft_lstmap
 
-### Compilation
+⸻
 
-The library is compiled into a **libft.a** file using the provided Makefile.
+🛠️ Usage
 
-```bash
+⚙️ Compilation
+
+The project includes a Makefile that compiles the source files into a static library called libft.a.
+
 # Compile the library
-make  
+make
 
 # Remove object files
-make clean  
+make clean
 
 # Remove object files and the library
-make fclean  
+make fclean
 
 # Recompile everything
-make re  
-```
+make re
 
-### Example of Use
 
-```c
+⸻
+
+💡 Example of Use
+
 #include "libft.h"
 
 int main(void)
 {
     char *str = "Hello, 42!";
     int len = ft_strlen(str);
-    printf("String length is: %d\n", len);
+    printf("String length: %d\n", len);
     return (0);
 }
-```
 
----
 
-## 🚀 Learning Goals
+⸻
+
+🚀 Learning Goals
 
 This project helped me to:
-✅ Strengthen my understanding of the **C language**.
-✅ Master **pointers** and **memory management**.
-✅ Use **Makefiles** to automate compilation.
-✅ Build a **reusable and clean codebase** for future 42 projects.
+✅ Strengthen my understanding of the C language
+✅ Master memory management and pointers
+✅ Use Makefiles to automate builds
+✅ Build a solid foundation for all future 42 projects
 
----
+⸻
 
-## 🤝 Contribution
+🤝 Contribution
 
-This project is part of my journey at **42 Lyon**.
-Suggestions and discussions are always welcome! 😊
+This project was created as part of my training at 42 Lyon.
+Suggestions and improvements are always welcome! 😊
 
----
+⸻
 
-## 🛡️ License
+🛡️ License
 
-This project follows the **42 School license**.
-Free to use and modify for educational purposes.
+This project follows the 42 School License.
+You are free to use and modify it for educational purposes.
 
----
+⸻
 
-✨ **Thank you for visiting my Libft project!** 🚀
+✨ Thanks for visiting my Libft project! 🚀
