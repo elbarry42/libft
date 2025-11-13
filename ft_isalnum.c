@@ -6,30 +6,25 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:16:17 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/10 15:37:14 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/13 12:52:26 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(char *str)
+int	ft_isalnum(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if ((str[i] < 'a' || str[i] > 'z') && (str[i] < 'A' || str[i] > 'Z')
-			&& (str[i] < 48 || str[i] > 57))
+	if ((c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < 48 || c > 57))
 			return (0);
-		i++;
-	}
 	return (1);
 }
 
 #include <stdio.h>
+#include <ctype.h>
+
 int	main (void)
 {
-	printf("%d", ft_isalnum("elhadj42"));
+	printf("%d \n", ft_isalnum('a'));
+	printf("%d", ft_isalnum('a'));
 	return (0);
 }
