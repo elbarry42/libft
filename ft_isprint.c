@@ -6,23 +6,16 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:38:01 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/10 15:41:20 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/13 13:09:04 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(char *str)
+int	ft_isprint(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if ((str[i] < 32 || str[i] > 126))
+	if (c < 32 || c > 126)
 			return (0);
-		i++;
-	}
 	return (1);
 }
 
@@ -30,6 +23,6 @@ int	ft_isprint(char *str)
 
 int	main (void)
 {
-	printf("%d", ft_isprint("test4/!"));
+	printf("%d", ft_isprint('g'));
 	return (0);
 }
