@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 15:16:17 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/18 10:35:58 by elbarry          ###   ########.fr       */
+/*   Created: 2025/11/18 11:33:59 by elbarry           #+#    #+#             */
+/*   Updated: 2025/11/18 11:41:07 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int	ft_toupper(int c)
 {
-	if ((c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < 48 || c > 57))
-			return (0);
-	return (1);
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
+	return (c);
 }
-
 #include <stdio.h>
-
-int	main (void)
+int	main(void)
 {
-	printf("%d \n", ft_isalnum('a'));
-	printf("%d", ft_isalnum('a'));
+	printf("%d", ft_toupper('l'));
 	return (0);
 }

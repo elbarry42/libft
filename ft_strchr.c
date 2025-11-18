@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 15:16:17 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/18 10:35:58 by elbarry          ###   ########.fr       */
+/*   Created: 2025/11/18 11:47:13 by elbarry           #+#    #+#             */
+/*   Updated: 2025/11/18 12:17:32 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+char	*ft_strchr(const char *s, int c)
 {
-	if ((c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < 48 || c > 57))
-			return (0);
-	return (1);
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == c)
+			return ((char *) &s[i]);
+		i++;
+	}
+	return (NULL);
 }
 
 #include <stdio.h>
-
-int	main (void)
+int	main(void)
 {
-	printf("%d \n", ft_isalnum('a'));
-	printf("%d", ft_isalnum('a'));
-	return (0);
+	printf("%s", ft_strchr("langage", 'a'));
 }

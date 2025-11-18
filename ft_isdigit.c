@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:03:03 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/13 13:13:48 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/18 11:29:47 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int	ft_isdigit(int c)
 }
 
 #include <stdio.h>
-#include <ctype.h>
 
 int	main (void)
 {

@@ -6,13 +6,13 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:37:33 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/10 16:49:30 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/18 11:25:32 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	unsigned int	i;
 	unsigned int	src_len;
@@ -22,17 +22,17 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	while (src[src_len])
 		src_len++;
 	dest_len = 0;
-	while (dest[dest_len])
+	while (dst[dest_len])
 		dest_len++;
 	if (size <= dest_len)
 		return (src_len + size);
 	i = 0;
 	while (src[i] && (dest_len + i) < (size - 1))
 	{
-		dest[dest_len + i] = src[i];
+		dst[dest_len + i] = src[i];
 		i++;
 	}
-	dest[dest_len + i] = '\0';
+	dst[dest_len + i] = '\0';
 	return (src_len + dest_len);
 }
 
@@ -45,6 +45,6 @@ int	main(void)
 	char	s[] = "elhadj";
 	int	taille = sizeof(d);
 	printf ("%zu \n", strlcat(d, s, taille));
-	printf ("%d", ft_strlcat(d, s, taille));
+	printf ("%zu", ft_strlcat(d, s, taille));
 	return (0);
 }

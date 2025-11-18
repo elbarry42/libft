@@ -1,29 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 15:16:17 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/18 10:35:58 by elbarry          ###   ########.fr       */
+/*   Created: 2025/11/18 12:27:27 by elbarry           #+#    #+#             */
+/*   Updated: 2025/11/18 14:34:40 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	if ((c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < 48 || c > 57))
-			return (0);
-	return (1);
-}
+	size_t	i;
+	size_t	j;
 
+	i = 0;
+	if (!little)
+		return ((char *) &big[0]);
+	while (big[i] && i < len)
+	{
+		j = 0;
+		while (big[i + j] == little[j])
+		{
+			if (little[j + 1] == '\0')
+				return ((char *) &big[i]);
+			j++;
+		}
+		i++;
+	}
+	return (0);
+}
 #include <stdio.h>
 
-int	main (void)
+int	main(void)
 {
-	printf("%d \n", ft_isalnum('a'));
-	printf("%d", ft_isalnum('a'));
-	return (0);
+	char	big[] = "hello world";
+	char	little[] = "world";
+	size_t	len = 4;
+	printf("%s", ft_strnstr(big, little, len));
 }

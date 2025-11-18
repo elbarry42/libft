@@ -1,29 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 15:16:17 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/18 10:35:58 by elbarry          ###   ########.fr       */
+/*   Created: 2025/11/10 15:47:21 by elbarry           #+#    #+#             */
+/*   Updated: 2025/11/18 11:07:03 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	if ((c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < 48 || c > 57))
-			return (0);
-	return (1);
-}
+	int	i;
+	unsigned char	*cpy_src;
+	unsigned char	*cpy_dest;
 
-#include <stdio.h>
-
-int	main (void)
-{
-	printf("%d \n", ft_isalnum('a'));
-	printf("%d", ft_isalnum('a'));
-	return (0);
+	i = 0;
+	cpy_src = (unsigned char *) src;
+	cpy_dest = (unsigned char *) dest;
+	if (dest > src)
+	{
+		while (i < n)
+		{
+			cpy_dest[n - i - 1] = cpy_src[n - i - 1];
+			i++;
+		}
+	}
+	else
+		ft_memcpy(dest, src, n);
+	return (dest);
 }

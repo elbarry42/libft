@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 15:16:17 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/18 10:35:58 by elbarry          ###   ########.fr       */
+/*   Created: 2025/11/18 12:26:13 by elbarry           #+#    #+#             */
+/*   Updated: 2025/11/18 12:51:49 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if ((c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < 48 || c > 57))
-			return (0);
-	return (1);
-}
+	size_t	i;
+	unsigned char	*s1_bis;
+	unsigned char	*s2_bis;
 
-#include <stdio.h>
-
-int	main (void)
-{
-	printf("%d \n", ft_isalnum('a'));
-	printf("%d", ft_isalnum('a'));
+	i = 0;
+	s1_bis = (unsigned char *) s1;
+	s2_bis = (unsigned char *) s2;
+	while (i < n && s1_bis[i] == s2_bis[i] && s1_bis[i])
+		i++;
+	if (i < n)
+		return (s1_bis[i] - s2_bis[i]);
 	return (0);
 }
