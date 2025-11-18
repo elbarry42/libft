@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:46:18 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/17 16:44:35 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/17 16:46:30 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	bzero(void *s, size_t n)
 {
-	ft_memset(s,0,n);
+	ft_memset (s, 0, n);
 }
