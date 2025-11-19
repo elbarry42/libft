@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 16:26:38 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/18 14:09:04 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/19 17:53:25 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strdup(const char *s)
 
 	i = 0;
 	len = 0;
+	if (!s)
+		return (NULL);
 	while (s[len])
 		len++;
 	dest = (char *) malloc(sizeof(char) * (len + 1));
@@ -38,5 +40,5 @@ char	*ft_strdup(const char *s)
 int	main(void)
 {
 	char	s[] = "elhadj";
-	printf("%s", ft_strdup(s));
+	printf("%s", ft_strdup(NULL));
 }

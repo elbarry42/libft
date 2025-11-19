@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 14:49:24 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/13 12:56:50 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/19 13:15:41 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,10 @@ int	ft_isalpha(int c)
 }
 
 #include <stdio.h>
-#include <ctype.h>
 
 int	main (void)
 {
-	printf("%d \n", ft_isalpha('a'));
+	printf("%d \n", isalpha('a'));
 	printf("%d", ft_isalpha('a'));
 	return (0);
 }

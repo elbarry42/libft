@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:47:21 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/18 11:07:03 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/19 13:30:27 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,14 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	else
 		ft_memcpy(dest, src, n);
 	return (dest);
+}
+#include <stdio.h>
+
+int	main(void)
+{
+	unsigned char	dest[] = "barry";
+	unsigned char	src[] = "elhadj";
+	printf ("%s \n", (char *) memmove(dest, src, 4));
+	printf ("%s", (char *) ft_memmove(dest, src, 4));
+	return (0);
 }
