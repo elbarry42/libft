@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 13:32:41 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/13 15:40:01 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/19 17:55:08 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,10 @@ int	ft_atoi(const char *str)
 	return (sign * value);
 }
 #include <stdio.h>
-#include <stdlib.h>
+
 int	main(void)
 {
-	printf ("%d \n", ft_atoi("+-1234a"));
-	printf ("%d", atoi("+-1234a"));
+	printf ("%d \n", atoi("a42a"));
+	printf ("%d", ft_atoi("a42a"));
 	return (0);
 }

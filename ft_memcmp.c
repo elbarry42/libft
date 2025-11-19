@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 12:26:13 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/18 12:51:49 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/19 13:26:40 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,16 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	if (i < n)
 		return (s1_bis[i] - s2_bis[i]);
+	return (0);
+}
+
+#include <stdio.h>
+
+int	main(void)
+{
+	unsigned char	s1[] = "barry";
+	unsigned char	s2[] = "baRry";
+	printf ("%d \n", memcmp(s1, s2, 4));
+	printf ("%d", ft_memcmp(s1, s2, 4));
 	return (0);
 }

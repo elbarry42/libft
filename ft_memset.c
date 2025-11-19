@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:45:56 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/18 16:30:05 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/19 13:12:36 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,8 @@ void	*ft_memset(void *s, int c, size_t n)
 
 int	main(void)
 {
-	char buffer1[20];
-	//char buffer2[20];
-	//char buffer3[20];
-
-	printf("=== ft_memset ===\n");
-	ft_memset(buffer1, 'A', 10);
-	printf("%s", buffer1);
+	unsigned char s[20] = "AAAAAAAA";
+	
+	printf("%s", (char *) ft_memset(s, 'G', 20));
 	return (0);
 }
