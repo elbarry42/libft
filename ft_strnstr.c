@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 12:27:27 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/19 18:03:57 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/20 11:22:32 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
-	i = 0;
 	if (!little)
 		return ((char *) &big[0]);
+	i = 0;
 	while (big[i] && i < len)
 	{
 		j = 0;
@@ -40,8 +40,7 @@ int	main(void)
 {
 	char	big[] = "hello world";
 	char	little[] = "hello";
-	size_t	len = 2;
-	// char a = strnstr(big, little, len);
-	// printf("%s", a);
+	size_t	len = 5;
 	printf("%s", ft_strnstr(big, little, len));
+	return (0);
 }
