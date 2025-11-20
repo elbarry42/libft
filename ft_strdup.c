@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 16:26:38 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/19 17:53:25 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/20 13:22:18 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,5 @@ char	*ft_strdup(const char *s)
 int	main(void)
 {
 	char	s[] = "elhadj";
-	printf("%s", ft_strdup(NULL));
+	printf("%s", ft_strdup(s));
 }
