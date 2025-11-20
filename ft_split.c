@@ -1,37 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/20 11:53:49 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 15:32:35 by elbarry          ###   ########.fr       */
+/*   Created: 2025/11/20 13:19:15 by elbarry           #+#    #+#             */
+/*   Updated: 2025/11/20 18:29:49 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void	ft_putnbr_fd(int n, int fd)
+
+int	is_separator(char c, char *charset)
 {
-	unsigned int	tmp;
+	int	i;
 	
-	tmp = n;
-	if (n < 0)
+	i = 0;
+	while (charset[i])
 	{
-		tmp = -1 * n;
-		ft_putchar_fd('-', fd);
+		if(charset[i] == c)
+			return (1);
+		i++;
 	}
-	if (tmp < 10)
-		ft_putchar_fd((tmp + 48), fd);
-	else
-	{
-		ft_putnbr_fd((tmp / 10), fd);
-		ft_putchar_fd(((tmp % 10) + 48), fd);
-	}
+	return (0);
 }
 
+int	is_word(char cbefore, char c, char *charset)
+{
+	return(!is_separator(c, charset) && is_separator(cbefore, charset));
+}
+
+char	**ft_split(char const *s, char c)
+{
+	
+}
+#include <stdio.h>
 int	main(void)
 {
-	ft_putnbr_fd(-2147483648, 1);
+	int	i = 0;
+	char	**split = ft_split("bonjour tout le monde", ' ');
+	while (split[i])
+	{
+		printf("%s", split[i]);
+		i++;
+	}
 	return (0);
 }
