@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 13:32:41 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/19 17:55:08 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/20 11:08:24 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int	ft_atoi(const char *str)
 	sign = 1;
 	value = 0;
 	testSign = 0;
+	if (!str)
+		return (NULL);
 	while (str[i] == ' ' || (str[i] >= 7 && str[i] <= 13))
 		i++;
 	while (str[i])

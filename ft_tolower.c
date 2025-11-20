@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 11:41:54 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/18 11:42:56 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/20 11:24:26 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int	ft_tolower(int c)
 	return (c);
 }
 #include <stdio.h>
+
 int	main(void)
 {
 	printf("%d", ft_tolower('A'));

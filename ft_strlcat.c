@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:37:33 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/19 17:51:10 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/20 11:16:12 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	unsigned int	i;
-	unsigned int	src_len;
-	unsigned int	dest_len;
+	size_t	i;
+	size_t	src_len;
+	size_t	dest_len;
 
 	src_len = 0;
 	while (src[src_len])
@@ -41,8 +41,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 int	main(void)
 {
-	char	d[] = "barry";
-	char	s[] = "elhadj";
+	char	d[] = "elhadj";
+	char	s[] = "barry";
 	int	taille = sizeof(d);
 	printf ("%zu \n", strlcat(d, s, taille));
 	printf ("%zu", ft_strlcat(d, s, taille));

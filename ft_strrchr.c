@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 12:11:15 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/19 17:43:57 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/20 11:24:20 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
+	if (!s)
+		return (0);
 	i = 0;
 	while (s[i])
 		i++;
@@ -29,7 +31,9 @@ char	*ft_strrchr(const char *s, int c)
 }
 
 #include <stdio.h>
+
 int	main(void)
 {
-	printf("%s", ft_strrchr(NULL, 'o'));
+	printf("%s", ft_strrchr("langage", 'a'));
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 11:33:59 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/18 11:41:07 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/20 11:24:33 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int	ft_toupper(int c)
 	return (c);
 }
 #include <stdio.h>
+
 int	main(void)
 {
 	printf("%d", ft_toupper('l'));
