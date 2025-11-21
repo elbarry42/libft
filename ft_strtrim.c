@@ -3,10 +3,64 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 12:16:21 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 12:16:22 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 16:22:29 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+int	is_in_set(char c, const char *set)
+{
+	int	i;
+
+	i = 0;
+	while (set[i])
+	{
+		if (set[i] == c)
+			return (1);
+		i++;
+	}
+	return (0);
+}
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	int		i;
+	int		start;
+	int		end;
+	char	*trimmed;
+
+	if (!s1 || !set)
+		return (NULL);
+	start = 0;
+	while (s1[start] && is_in_set(s1[start], set))
+		start++;
+	end = ft_strlen(s1);
+	while (end > start && is_in_set(s1[end - 1], set))
+		end--;
+	trimmed = malloc(sizeof(char) * (end - start + 1));
+	if (!trimmed)
+		return (NULL);
+	i = 0;
+	while (start < end)
+	{
+		trimmed[i] = s1[start];
+		start++;
+		i++;
+	}
+	trimmed[i] = '\0';
+	return (trimmed);
+}
+
+#include <stdio.h>
+
+int	main(void)
+{
+	printf("%s \n", ft_strtrim("\n\thello 42\n", "\t\n"));
+	printf("%s \n", ft_strtrim("ababaaaMy name is Simonbbaaabba", "ab"));
+	printf("%s \n", ft_strtrim("hellomy name is elhadjhello", "lheo"));
+	return (0);
+}
