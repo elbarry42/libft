@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 16:28:33 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 16:49:58 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 19:08:09 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	size_t	i;
-	size_t total;
+	size_t			i;
+	size_t			total;
 	unsigned char	*temp;
-	
+
 	if (nmemb == 0 || size == 0)
 		return (malloc(0));
 	if (nmemb > SIZE_MAX / size)
@@ -34,6 +34,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	return (temp);
 }
+
 // #include <stdio.h>
 
 // int	main(void)

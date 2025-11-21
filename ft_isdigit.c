@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:03:03 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 16:11:31 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 19:01:26 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_isdigit(int c)
 {
 	if (c < 48 || c > 57)
-			return (0);
+		return (0);
 	return (1);
 }
 

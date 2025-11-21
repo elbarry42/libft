@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 11:47:13 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 11:06:47 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 17:08:04 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-#include <stdio.h>
-int	main(void)
-{
-	printf("%s", ft_strchr("langage", 'a'));
-}
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	printf("%s", ft_strchr(NULL, 'a'));
+// }

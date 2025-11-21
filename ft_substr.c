@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/20 12:15:25 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 13:18:33 by elbarry          ###   ########.fr       */
+/*   Created: 2025/11/21 16:11:36 by elbarry           #+#    #+#             */
+/*   Updated: 2025/11/21 19:03:24 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,38 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	
+	size_t	i;
+	size_t	len_s;
+	char	*sub;
+
+	if (!s)
+		return (NULL);
+	len_s = ft_strlen(s);
+	sub = malloc(sizeof(char) * (len + 1));
+	if (!sub)
+		return (NULL);
+	if (start >= len_s)
+		return (ft_strdup(""));
+	if (len > len_s - start)
+		len = len_s - start;
+	i = 0;
+	while (i < len)
+	{
+		sub[i] = s[start + i];
+		i++;
+	}
+	sub[i] = '\0';
+	return (sub);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	
-}
+// int main(void)
+// {
+// 	char *s = "Hello 42 Lyon";
+
+// 	printf("%s\n", ft_substr(s, 6, 2));   // "42"
+// 	printf("%s\n", ft_substr(s, 0, 5));   // "Hello"
+// 	printf("%s\n", ft_substr(s, 20, 5));  // ""
+// 	return (0);
+// }

@@ -3,18 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 11:53:49 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 15:32:35 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 19:02:42 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_putnbr_fd(int n, int fd)
 {
 	unsigned int	tmp;
-	
+
 	tmp = n;
 	if (n < 0)
 	{
@@ -30,8 +31,8 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 }
 
-int	main(void)
-{
-	ft_putnbr_fd(-2147483648, 1);
-	return (0);
-}
+// int	main(void)
+// {
+// 	ft_putnbr_fd(-2147483648, 1);
+// 	return (0);
+// }

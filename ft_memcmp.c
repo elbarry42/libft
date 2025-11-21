@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 12:26:13 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/19 13:26:40 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 19:09:26 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*s1_bis;
 	unsigned char	*s2_bis;
 
@@ -28,13 +28,13 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	unsigned char	s1[] = "barry";
-	unsigned char	s2[] = "baRry";
-	printf ("%d \n", memcmp(s1, s2, 4));
-	printf ("%d", ft_memcmp(s1, s2, 4));
-	return (0);
-}
+// int	main(void)
+// {
+// 	unsigned char	s1[] = "barry";
+// 	unsigned char	s2[] = "baRry";
+// 	printf ("%d \n", memcmp(s1, s2, 4));
+// 	printf ("%d", ft_memcmp(s1, s2, 4));
+// 	return (0);
+// }
