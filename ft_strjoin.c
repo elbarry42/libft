@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 12:15:43 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 16:49:26 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 16:03:27 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,12 +46,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (result);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	char	s1[] = "elhadj";
-	char	s2[] = "barry";
-	printf("%s", ft_strjoin(s1, s2));
-	return (0);
-}
+// int	main(void)
+// {
+// 	char	s1[] = "elhadj";
+// 	char	s2[] = "barry";
+// 	printf("%s", ft_strjoin(s1, s2));
+// 	return (0);
+// }
