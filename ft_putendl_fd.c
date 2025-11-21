@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 11:51:50 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 13:18:58 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 17:17:30 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putchar_fd('\n', fd);
 }
 
-int	main(void)
-{
-	ft_putendl_fd("test", 1);
-	return (0);
-}
+// int	main(void)
+// {
+// 	ft_putendl_fd("test", 1);
+// 	return (0);
+// }

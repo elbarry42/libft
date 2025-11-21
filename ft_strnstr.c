@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 12:27:27 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 11:42:28 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 17:22:20 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,14 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-#include <stdio.h>
 
-int	main(void)
-{
-	char	big[] = "hello world";
-	char	little[] = "hello";
-	size_t	len = 5;
-	printf("%s", ft_strnstr(big, little, len));
-	return (0);
-}
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	big[] = "hello world";
+// 	char	little[] = "hello";
+// 	size_t	len = 5;
+// 	printf("%s", ft_strnstr(big, little, len));
+// 	return (0);
+// }

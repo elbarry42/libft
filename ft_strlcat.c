@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:37:33 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 11:16:12 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 17:19:18 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (src_len + dest_len);
 }
 
-#include <stdio.h>
-#include <bsd/string.h>
+// #include <stdio.h>
+// #include <bsd/string.h>
 
-int	main(void)
-{
-	char	d[] = "elhadj";
-	char	s[] = "barry";
-	int	taille = sizeof(d);
-	printf ("%zu \n", strlcat(d, s, taille));
-	printf ("%zu", ft_strlcat(d, s, taille));
-	return (0);
-}
+// int	main(void)
+// {
+// 	char	d[] = "elhadj";
+// 	char	s[] = "barry";
+// 	int	taille = sizeof(d);
+// 	printf ("%zu \n", strlcat(d, s, taille));
+// 	printf ("%zu", ft_strlcat(d, s, taille));
+// 	return (0);
+// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 16:26:38 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 13:22:18 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 17:23:19 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,10 @@ char	*ft_strdup(const char *s)
 	dest[i] = '\0';
 	return (dest);
 }
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	char	s[] = "elhadj";
-	printf("%s", ft_strdup(s));
-}
+// int	main(void)
+// {
+// 	char	s[] = "elhadj";
+// 	printf("%s", ft_strdup(s));
+// }

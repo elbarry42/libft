@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 12:16:21 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 16:22:29 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 17:08:35 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,12 +55,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (trimmed);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	printf("%s \n", ft_strtrim("\n\thello 42\n", "\t\n"));
-	printf("%s \n", ft_strtrim("ababaaaMy name is Simonbbaaabba", "ab"));
-	printf("%s \n", ft_strtrim("hellomy name is elhadjhello", "lheo"));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%s \n", ft_strtrim("\n\thello 42\n", "\t\n"));
+// 	printf("%s \n", ft_strtrim("ababaaaMy name is Simonbbaaabba", "ab"));
+// 	printf("%s \n", ft_strtrim("hellomy name is elhadjhello", "lheo"));
+// 	return (0);
+// }

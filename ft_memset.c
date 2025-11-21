@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:45:56 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/19 13:12:36 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/21 19:05:34 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*s_bis;
 
 	i = 0;
@@ -24,16 +24,14 @@ void	*ft_memset(void *s, int c, size_t n)
 		s_bis[i] = c;
 		i++;
 	}
-	return ((void *)s_bis);
-	
+	return (s_bis);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	unsigned char s[20] = "AAAAAAAA";
-	
-	printf("%s", (char *) ft_memset(s, 'G', 20));
-	return (0);
-}
+// int	main(void)
+// {
+// 	unsigned char s[20] = "AAAAAAAA";
+// 	printf("%s", (char *) ft_memset(s, 'G', 20));
+// 	return (0);
+// }
