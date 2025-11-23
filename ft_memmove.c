@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:47:21 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 19:46:43 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/23 11:18:01 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*cpy_src;
 	unsigned char	*cpy_dest;
 
-	i = 0;
+	if (!dest && !src)
+		return (NULL);
 	cpy_src = (unsigned char *) src;
 	cpy_dest = (unsigned char *) dest;
+	i = 0;
 	if (dest > src)
 	{
 		while (i < n)

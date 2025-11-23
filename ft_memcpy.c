@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:46:46 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 19:06:19 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/23 11:17:46 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,17 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*cpy_src;
 	unsigned char	*cpy_dest;
 
-	i = 0;
+	if (!dest && !src)
+		return (NULL);
 	cpy_dest = (unsigned char *) dest;
 	cpy_src = (unsigned char *) src;
+	i = 0;
 	while (i < n)
 	{
 		cpy_dest[i] = cpy_src[i];
 		i++;
 	}
-	return (dest);
+	return (cpy_dest);
 }
 
 // #include <stdio.h>

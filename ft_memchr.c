@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 12:24:43 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 19:09:17 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/23 11:07:38 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	s_bis = (unsigned char *) s;
-	while (s_bis[i] && i < n)
+	while (i < n)
 	{
-		if (s_bis[i] == c)
+		if (s_bis[i] == (unsigned char) c)
 			return (&s_bis[i]);
 		i++;
 	}
