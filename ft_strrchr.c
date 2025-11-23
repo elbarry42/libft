@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 12:11:15 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 17:23:02 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/23 10:54:45 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,14 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
-	if (!s)
-		return (0);
-	i = 0;
-	while (s[i])
-		i++;
-	while (i > 0)
+	i = ft_strlen(s);
+	while (s[i] != (unsigned char) c)
 	{
-		if (s[i] == c)
-			return ((char *) &s[i]);
+		if (i == 0)
+			return (NULL);
 		i--;
 	}
-	return (NULL);
+	return ((char *) &s[i]);
 }
 
 // #include <stdio.h>

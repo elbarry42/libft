@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 16:26:38 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 17:23:19 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/23 10:21:09 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ char	*ft_strdup(const char *s)
 
 	i = 0;
 	len = 0;
-	if (!s)
-		return (NULL);
 	while (s[len])
 		len++;
 	dest = (char *) malloc(sizeof(char) * (len + 1));

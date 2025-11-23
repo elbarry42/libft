@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:45:56 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 19:05:34 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/23 11:14:16 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ void	*ft_memset(void *s, int c, size_t n)
 
 	i = 0;
 	s_bis = (unsigned char *) s;
-	while (i < n && s_bis[i])
+	while (i < n)
 	{
-		s_bis[i] = c;
+		s_bis[i] = (unsigned char) c;
 		i++;
 	}
-	return (s_bis);
+	return (s);
 }
 
 // #include <stdio.h>

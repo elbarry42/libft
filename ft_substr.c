@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 16:11:36 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 19:03:24 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/23 11:21:49 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	len_s = ft_strlen(s);
-	sub = malloc(sizeof(char) * (len + 1));
-	if (!sub)
-		return (NULL);
 	if (start >= len_s)
 		return (ft_strdup(""));
 	if (len > len_s - start)
 		len = len_s - start;
+	sub = malloc(sizeof(char) * (len + 1));
+	if (!sub)
+		return (NULL);
 	i = 0;
 	while (i < len)
 	{
