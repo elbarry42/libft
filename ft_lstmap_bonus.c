@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 11:52:32 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/23 22:19:01 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:30:48 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;
 	t_list	*new_node;
-	
+
 	if (!lst || !f || !del)
 		return (NULL);
 	new_list = NULL;

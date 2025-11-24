@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 11:51:32 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/23 21:17:13 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:31:00 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,8 @@ int main(void)
 	printf("\nDeleting node 2:\n");
 	ft_lstdelone(n2, del_content);
 
-	printf("\nAfter delete (attention, la chaine est cassée car on ne recolle pas !):\n");
+	printf("\nAfter delete (attention, 
+	la chaine est cassée car on ne recolle pas !):\n");
 	print_list(n1);
 
 	// free rest nodes
