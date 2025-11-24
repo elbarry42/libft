@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 11:51:55 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/23 21:48:42 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:29:59 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tmp;
-	
+
 	if (!lst || !del)
 		return ;
 	while (*lst)

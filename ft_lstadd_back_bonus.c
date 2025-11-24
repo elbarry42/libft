@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 11:51:35 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/23 19:13:30 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:29:48 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
-	
+
 	if (!lst || !new)
 		return ;
 	if (*lst == NULL)
