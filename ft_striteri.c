@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 12:18:46 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 18:49:17 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:50:59 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,3 @@ void	to_upper_odd(unsigned int i, char *c)
 	}
 }
 
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	str[] = "hello world";
-
-// 	printf("Original: %s\n", str);
-// 	ft_striteri(str, to_upper_odd);
-// 	printf("After  : %s\n", str);
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:37:33 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 17:19:18 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:51:10 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dest_len + i] = '\0';
 	return (src_len + dest_len);
 }
-
-// #include <stdio.h>
-// #include <bsd/string.h>
-
-// int	main(void)
-// {
-// 	char	d[] = "elhadj";
-// 	char	s[] = "barry";
-// 	int	taille = sizeof(d);
-// 	printf ("%zu \n", strlcat(d, s, taille));
-// 	printf ("%zu", ft_strlcat(d, s, taille));
-// 	return (0);
-// }

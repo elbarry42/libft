@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:50:00 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/23 11:08:40 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:51:27 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (s1_cpy[i] - s2_cpy[i]);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	s1[] = "barry";
-// 	char	s2[] = "baRry";
-// 	printf ("%d \n", strncmp(s1, s2, 4));
-// 	printf ("%d", ft_strncmp(s1, s2, 4));
-// 	return (0);
-// }

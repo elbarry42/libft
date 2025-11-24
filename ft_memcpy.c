@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:46:46 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/23 11:17:46 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:49:54 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (cpy_dest);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	unsigned char	dest[] = "barry";
-// 	unsigned char	src[] = "elhadj";
-// 	printf ("%s \n", (char *) memcpy(dest, src, 4));
-// 	printf ("%s", (char *) ft_memcpy(dest, src, 4));
-// 	return (0);
-// }

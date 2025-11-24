@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 19:20:08 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 19:45:16 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:50:38 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,19 +97,3 @@ char	**ft_split(const char *s, char c)
 	result[i] = (NULL);
 	return (result);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	int	i = 0;
-// 	char	**split;
-
-// 	split = ft_split("bonjour tout le monde", ' ');
-// 	while (split[i])
-// 	{
-// 		printf("%s \n", split[i]);
-// 		i++;
-// 	}
-// 	return (0);	
-// }

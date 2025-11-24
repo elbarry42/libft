@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 13:32:41 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/24 12:35:07 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:47:35 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * value);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	printf ("%d \n", atoi("--42a"));
-// 	printf ("%d", ft_atoi("--42a"));
-// 	return (0);
-// }

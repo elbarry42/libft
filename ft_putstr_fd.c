@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 11:31:28 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 17:16:59 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:50:32 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-
-// int	main(void)
-// {
-// 	ft_putstr_fd("test", 1);
-// 	return (0);
-// }

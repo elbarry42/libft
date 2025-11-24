@@ -8,6 +8,8 @@ AR = ar rcs
 
 RM = rm -f
 
+DEP = libft.h
+
 SRCS =	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
 		ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c \
@@ -26,7 +28,7 @@ OBJS_BONUS	= $(SRCS_BONUS:.c=.o)
 
 OBJS_ALL	= $(OBJS)
 
-%.o: %.c
+%.o: %.c $(DEP)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 all: $(NAME)

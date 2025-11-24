@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 11:27:05 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/20 13:18:46 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:50:13 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write (fd, &c, 1);
 }
-
-// int	main(void)
-// {
-// 	ft_putchar_fd('c', 1);
-// 	return (0);
-// }
