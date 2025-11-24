@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 16:11:36 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/23 11:21:49 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:51:44 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,15 +37,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
-
-// #include <stdio.h>
-
-// int main(void)
-// {
-// 	char *s = "Hello 42 Lyon";
-
-// 	printf("%s\n", ft_substr(s, 6, 2));   // "42"
-// 	printf("%s\n", ft_substr(s, 0, 5));   // "Hello"
-// 	printf("%s\n", ft_substr(s, 20, 5));  // ""
-// 	return (0);
-// }

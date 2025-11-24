@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 12:27:27 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/23 11:44:50 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:51:32 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	big[] = "hello world";
-// 	char	little[] = "world";
-// 	size_t	len = 11;
-// 	printf("%s", ft_strnstr(big, little, len));
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/23 11:51:55 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/24 12:29:59 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:48:54 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,51 +27,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
-/*
-#include <stdio.h>
-
-void	del_content(void *content)
-{
-	(void)content;
-	// Si ton content avait été malloc (ex: ft_strdup),
-	// tu ferais ici: free(content);
-}
-
-void	print_list(t_list *lst)
-{
-	while (lst)
-	{
-		printf("%s -> ", (char *)lst->content);
-		lst = lst->next;
-	}
-	printf("NULL\n");
-}
-
-int	main(void)
-{
-	t_list	*list;
-	t_list	*n1;
-	t_list	*n2;
-	t_list	*n3;
-
-	n1 = ft_lstnew("Hello");
-	n2 = ft_lstnew("42");
-	n3 = ft_lstnew("Lyon");
-
-	n1->next = n2;
-	n2->next = n3;
-	list = n1;
-
-	printf("Avant clear : ");
-	print_list(list);
-
-	ft_lstclear(&list, del_content);
-
-	printf("Après clear : ");
-	if (list == NULL)
-		printf("list = NULL (OK)\n");
-	else
-		print_list(list);
-
-	return (0);
-}*/

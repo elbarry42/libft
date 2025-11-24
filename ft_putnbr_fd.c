@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 11:53:49 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 19:02:42 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:50:28 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(((tmp % 10) + 48), fd);
 	}
 }
-
-// int	main(void)
-// {
-// 	ft_putnbr_fd(-2147483648, 1);
-// 	return (0);
-// }

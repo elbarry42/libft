@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 18:48:57 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 18:58:14 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:51:24 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,26 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[i] = '\0';
 	return (result);
 }
-
-// char	to_upper_odd(unsigned int i, char c)
-// {
-// 	if (i % 2 == 1)
-// 	{
-// 		if (c >= 'a' && c <= 'z')
-// 			return (c - 32);
-// 	}
-// 	return (c);
-// }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	str[] = "hello world";
-// 	char	*result;
-// 	result = ft_strmapi(str, to_upper_odd);
-// 	printf("Original: %s\n", str);
-// 	printf("Mapped  : %s\n", result);
-// 	free(result);
-// 	return (0);
-// }

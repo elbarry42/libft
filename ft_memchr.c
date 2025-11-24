@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 12:24:43 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/23 11:07:38 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:49:45 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	unsigned char	src[] = "langage";
-// 	printf ("%s \n", (char *) memchr(src, 'g', 4));
-// 	printf ("%s", (char *) ft_memchr(src, 'g', 4));
-// 	return (0);
-// }

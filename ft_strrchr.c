@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 12:11:15 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/23 10:54:45 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:51:35 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return ((char *) &s[i]);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	printf("%s", ft_strrchr("langage", 'a'));
-// 	return (0);
-// }

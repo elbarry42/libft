@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 16:28:33 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 19:08:09 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:47:58 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return (temp);
 }
 
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	unsigned char *test = ft_calloc(10, 4);
-// 	int	i = 0;
-// 	while (i < 10)
-// 	{
-// 		printf("%d", test[i]);
-// 		i++;
-// 	}
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:20:02 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 19:01:46 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:48:13 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_isascii(int c)
 		return (0);
 	return (1);
 }
-
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	printf("%d", ft_isascii('c'));
-// 	return (0);
-// }

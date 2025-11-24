@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:38:01 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 19:04:26 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:48:21 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,3 @@ int	ft_isprint(int c)
 		return (0);
 	return (1);
 }
-
-// #include <stdio.h>
-
-// int	main (void)
-// {
-// 	printf("%d", ft_isprint('g'));
-// 	return (0);
-// }

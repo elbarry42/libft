@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 12:15:43 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 19:04:04 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 12:51:04 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,13 +43,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	result = ft_strcat(result, s2);
 	return (result);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	s1[] = "elhadj";
-// 	char	s2[] = "barry";
-// 	printf("%s", ft_strjoin(s1, s2));
-// 	return (0);
-// }
