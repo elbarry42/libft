@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 19:20:08 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/24 12:50:38 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/25 20:30:26 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ static char	*ft_get_word(const char *str, char sep)
 
 char	**ft_split(const char *s, char c)
 {
-	int		i;
+	size_t	i;
 	char	**result;
 
 	result = (char **) malloc((ft_countword(s, c) + 1) * sizeof(char *));

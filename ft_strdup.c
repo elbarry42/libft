@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 16:26:38 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/24 13:01:49 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/25 20:49:11 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,11 @@
 
 char	*ft_strdup(const char *s)
 {
-	int		i;
-	int		len;
-	char	*dest;
+	size_t		i;
+	char		*dest;
 
 	i = 0;
-	len = 0;
-	while (s[len])
-		len++;
-	dest = (char *) malloc(sizeof(char) * (len + 1));
+	dest = (char *) malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!dest)
 		return (NULL);
 	while (s[i])

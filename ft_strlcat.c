@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 16:37:33 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/24 12:51:10 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/25 20:51:29 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	src_len;
 	size_t	dest_len;
 
-	src_len = 0;
-	while (src[src_len])
-		src_len++;
-	dest_len = 0;
-	while (dst[dest_len])
-		dest_len++;
+	src_len = ft_strlen(src);
+	dest_len = ft_strlen(dst);
 	if (size <= dest_len)
 		return (src_len + size);
 	i = 0;

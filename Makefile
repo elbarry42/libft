@@ -1,15 +1,8 @@
 NAME = libft.a
-
 CC = cc
-
-CFLAGS = -Wall -Wextra -Werror
-
+CFLAGS = -Wall -Wextra -Werror -MMD -MP
 AR = ar rcs
-
 RM = rm -f
-
-DEP = libft.h
-
 SRCS =	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
 		ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c \
@@ -25,8 +18,10 @@ SRCS_BONUS =	ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 
 OBJS = $(SRCS:.c=.o)
 OBJS_BONUS = $(SRCS_BONUS:.c=.o)
+DEPS = $(OBJS:.o=.d)
+DEPS_BONUS = $(OBJS_BONUS:.o=.d)
 
-%.o: %.c $(DEP)
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 all: $(NAME)
@@ -34,15 +29,20 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
-bonus: $(OBJS) $(OBJS_BONUS)
+bonus: .bonus
+
+.bonus: $(OBJS) $(OBJS_BONUS)
+	@touch .bonus
 	$(AR) $(NAME) $(OBJS) $(OBJS_BONUS)
 
 clean:
-	$(RM) $(OBJS) $(OBJS_BONUS)
+	$(RM) $(OBJS) $(OBJS_BONUS) $(DEPS) $(DEPS_BONUS)
 
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(NAME) .bonus
 
 re: fclean all
 
 .PHONY: all clean fclean re bonus
+
+-include $(DEPS) $(DEPS_BONUS)

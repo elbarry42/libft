@@ -6,7 +6,7 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 13:32:41 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/24 12:47:35 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/25 20:27:14 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	value;
-	int	sign;
+	size_t	i;
+	int		value;
+	int		sign;
 
 	i = 0;
 	value = 0;

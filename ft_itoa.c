@@ -6,13 +6,13 @@
 /*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 12:17:20 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/24 13:01:41 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 16:55:59 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_digits(long n)
+static int	count_digits(long n)
 {
 	int	count;
 
