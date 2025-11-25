@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elbarry <elbarry@student.42.fr>            +#+  +:+       +#+        */
+/*   By: elbarry <elbarry@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 12:42:13 by elbarry           #+#    #+#             */
-/*   Updated: 2025/11/21 16:08:19 by elbarry          ###   ########.fr       */
+/*   Updated: 2025/11/24 16:59:55 by elbarry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <string.h>
-# include <ctype.h>
 # include <stdint.h>
 
 /* Part 1 - Libc functions */
