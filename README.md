@@ -1,9 +1,13 @@
-# Libft – My First Project at 42 Lyon 🎓
+# Libft 🎓
 
 Welcome to **Libft!** 🎉 My very first project at **42 Lyon**, where I built my own C library from scratch. 🔧
 
-<a href="https://github.com/elbarry42/libft">![42 Badge](https://github.com/elbarry42/elbarry42/blob/main/42_badges/libftm.png)</a>
+<div align="center">
 
+<a href="https://github.com/elbarry42/libft">![42 Badge](https://github.com/elbarry42/elbarry42/blob/main/42_badges/libftm.png)</a>
+<a href="https://github.com/elbarry42/ft_printf">![42 Badge](https://github.com/elbarry42/elbarry42/blob/main/42_badges/ft_printfe.png)</a>
+
+</div>
 ---
 
 ## 📝 Project Description
