@@ -4,7 +4,7 @@ Welcome to **Libft!** 🎉 My very first project at **42 Lyon**, where I built m
 
 <div align="center">
 
-<>![42 Badge](https://github.com/elbarry42/elbarry42/blob/main/42_badges/libftm.png)</a>
+<a>![42 Badge](https://github.com/elbarry42/elbarry42/blob/main/42_badges/libftm.png)</a>
 
 </div>
 
