@@ -54,8 +54,11 @@ Once the mandatory part was complete, I implemented linked list utilities:
 The project includes a **Makefile** that compiles the source files into a static library called **libft.a**.
 
 ```bash
-# Compile the library
+# Compile the library (the mandatory functions)
 make
+
+# Compile the library with the bonus functions
+make bonus
 
 # Remove object files
 make clean
